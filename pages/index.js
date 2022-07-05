@@ -2,6 +2,18 @@ import { BiDotsHorizontalRounded } from 'react-icons/bi';
 // import { IoEllipsisHorizontalOutline } from 'react-icons/io5';
 // import { AiOutlinedPlus } from 'react-icons/ai';
 import { BsPlusLg } from 'react-icons/bs';
+
+//////COMPONENTS:
+import  Header  from '../components/Header';
+import PortfolioChart from '../components/PortfolioChart';
+import BuyTokens from '../components/BuyTokens';
+import Notice from '../components/Notice';
+
+
+
+
+
+
 const styles = {
   wrapper: 'w-screen h-screen flex flex-col',
   mainContainer: 'w-2/3 h-full m-auto flex mt-16',
@@ -31,7 +43,7 @@ const styles = {
 export default function Home() {
   return (
     <div className={styles.wrapper}>
-      {/* <Header /> */}
+      <Header />
       <div className={styles.mainContainer}>
         <div className={styles.leftMain}>
           <div className={styles.portfolioAmountContainer}>
@@ -43,7 +55,7 @@ export default function Home() {
           </div>
           <div>
             <div className={styles.chartContainer}>
-              {/* <PortfolioChart /> */}
+              <PortfolioChart />
             </div>
           </div>
           <div className={styles.buyingPowerContainer}>
@@ -56,10 +68,10 @@ export default function Home() {
               <div className={styles.noticeMessage}>
                 Transfer your funds here.
               </div>
-              {/* <BuyTokens /> */}
+              <BuyTokens />
             </div>
           </div>
-          {/* <Notice /> */}
+          <Notice />
         </div>
         <div className={styles.rightMain}>
           <div className={styles.rightMainItem}>
